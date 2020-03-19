@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/inputScrollViewOS"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_input_meter_one_step"
+    tools:context=".bacameter.InputMeterOneStepActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    tools:ignore="NestedWeights">
+
+                    <EditText
+                        android:id="@+id/txtKDPelOS"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1.00"
+                        android:ems="10"
+                        android:hint="ID Pelanggan"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapSentences"
+                        android:paddingLeft="@dimen/fab_margin"
+                        android:paddingRight="@dimen/fab_margin"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+
+                    <requestFocus />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnQRCodeOS"
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_button"
+                    android:text="Scan ID"
+                    android:textColor="@color/white"
+                    android:typeface="monospace" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnCariOS"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_button"
+                    android:text="Cari Berdasarkan ID pelanggan"
+                    android:textColor="@color/white"
+                    android:typeface="monospace" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/txtPelangganOS"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1.00"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:hint="Nama Pelanggan"
+                        android:imeOptions="actionDone"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack"
+                        android:paddingLeft="@dimen/fab_margin"
+                        android:paddingRight="@dimen/fab_margin" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/txtAlamatOS"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1.00"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:hint="Alamat"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack"
+                        android:imeOptions="actionDone"
+                        android:paddingLeft="@dimen/fab_margin"
+                        android:paddingRight="@dimen/fab_margin" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <Button
+                    android:id="@+id/btnMapOS"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1.00"
+                    android:background="@drawable/background_button"
+                    android:text="View Location"
+                    android:textColor="@color/colorWhite"
+                    android:typeface="monospace" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    tools:ignore="NestedWeights">
+
+                    <EditText
+                        android:id="@+id/txtStandMeterOS"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1.00"
+                        android:digits="0123456789"
+                        android:ems="10"
+                        android:hint="Stand Meter"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:maxLength="6"
+                        android:paddingLeft="@dimen/fab_margin"
+                        android:paddingRight="@dimen/fab_margin" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnFotoMeterOS"
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_button"
+                    android:text="Foto Meter"
+                    android:textColor="@color/white"
+                    android:typeface="monospace" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="FOTO"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="25sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.00"
+                android:orientation="horizontal"
+                tools:ignore="InefficientWeight">
+
+                <ImageView
+                    android:id="@+id/imageViewPhotoOS"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/custom_shape"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/tidak_ada_foto_meter"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnLanjutOS"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/background_button"
+                        android:text="Lanjut"
+                        android:textColor="@color/white"
+                        android:typeface="monospace" />
+
+                    <Button
+                        android:id="@+id/btnResetOS"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/background_button"
+                        android:text="Reset"
+                        android:textColor="@color/white"
+                        android:typeface="monospace" />
+
+                    <Button
+                        android:id="@+id/btnInputCancelOS"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/background_button"
+                        android:text="Kembali"
+                        android:textColor="@color/white"
+                        android:typeface="monospace" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
